@@ -1,7 +1,7 @@
 <template>
-  <Header></Header>
   <div class="coming">
-    <h1>{{ msg }}</h1>
+    <my-header title="thisisheader"></my-header>
+    <h1>{{msg}}</h1>
     <div class="content">
       <ul>
         <my-component></my-component>
