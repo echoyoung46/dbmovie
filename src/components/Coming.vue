@@ -1,7 +1,12 @@
 <template>
   <div class="coming">
     <my-header title="thisisheader"></my-header>
-    <h1>{{msg}}</h1>
+    <div class="menu">
+      <ul>
+       <li class="menu-item"><a href="">正在热映</a></li>
+       <li class="menu-item"><a href="">即将上映</a></li>
+      </ul>
+    </div>
     <div class="content">
       <ul>
         <my-component></my-component>
@@ -30,5 +35,7 @@ export default {
 </script>
 
 <style scoped>
-
+.menu-item {
+  flex: 1;
+}
 </style>

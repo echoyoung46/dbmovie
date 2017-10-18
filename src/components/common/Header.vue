@@ -23,15 +23,11 @@
   height: 1.2rem;
 }
 input {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -.4rem;
-  margin-left: -45%;
-  width: 90%;
-  margin: 0 auto;
+  width: 80%;
   height: .8rem;
   line-height: 1rem;
   border-radius: .1rem;
+  margin: 0 auto;
+  float: left;
 }
 </style>
