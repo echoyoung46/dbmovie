@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+    <router-view keep-alive></router-view>
   </div>
 </template>
 
@@ -14,6 +14,9 @@ export default {
 * {
   margin: 0;
   padding: 0;
+}
+a {
+  text-decoration: none;
 }
 html {
   font-size: 100px;

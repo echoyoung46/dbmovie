@@ -4,6 +4,9 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import components from './components'
+import axios from 'axios'
+
+Vue.prototype.axios = axios
 
 Vue.use(components)
 
