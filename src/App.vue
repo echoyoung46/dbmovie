@@ -18,6 +18,9 @@ export default {
 a {
   text-decoration: none;
 }
+li {
+  list-style: none;
+}
 html {
   font-size: 100px;
 }
