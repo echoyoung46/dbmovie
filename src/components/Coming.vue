@@ -32,7 +32,7 @@ export default {
   data () {
     return {
       msg: 'coming',
-      hotUrl: 'http://api.douban.com//v2/movie/in_theaters',
+      hotUrl: '/api/movie/in_theaters',
       hotList: []
     }
   },
@@ -41,15 +41,13 @@ export default {
   },
   methods: {
     getHotMovies () {
-      this.axios.get(this.hotUrl)
-      .then((res) => {
-        if (res.status === 200) {
-          this.hotList = res.data.subjects
+      this.axios.get(this.hotUrl).then(response => {
+        if (response.status === 200) {
+          this.hotList = response.data.subjects
           console.log(this.hotList)
         }
-      })
-      .catch(function (error) {
-        console.log(error)
+      }, response => {
+        console.log('a')
       })
     }
   },
